@@ -201,6 +201,9 @@
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Mobil_homeController.cs" />
+    <Compile Include="Controllers\SejoursController.cs" />
+    <Compile Include="Controllers\TarifsController.cs" />
     <Compile Include="Controllers\Type_sejourController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -334,6 +337,21 @@
     <Content Include="Views\Clients\Details.cshtml" />
     <Content Include="Views\Clients\Edit.cshtml" />
     <Content Include="Views\Clients\Index.cshtml" />
+    <Content Include="Views\Mobil_home\Create.cshtml" />
+    <Content Include="Views\Mobil_home\Delete.cshtml" />
+    <Content Include="Views\Mobil_home\Details.cshtml" />
+    <Content Include="Views\Mobil_home\Edit.cshtml" />
+    <Content Include="Views\Mobil_home\Index.cshtml" />
+    <Content Include="Views\Sejours\Create.cshtml" />
+    <Content Include="Views\Sejours\Delete.cshtml" />
+    <Content Include="Views\Sejours\Details.cshtml" />
+    <Content Include="Views\Sejours\Edit.cshtml" />
+    <Content Include="Views\Sejours\Index.cshtml" />
+    <Content Include="Views\Tarifs\Create.cshtml" />
+    <Content Include="Views\Tarifs\Delete.cshtml" />
+    <Content Include="Views\Tarifs\Details.cshtml" />
+    <Content Include="Views\Tarifs\Edit.cshtml" />
+    <Content Include="Views\Tarifs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
