@@ -80,6 +80,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -202,8 +204,44 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CampingModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CampingModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CampingModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CampingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CampingModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CampingModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Client.cs">
+      <DependentUpon>CampingModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\location.cs">
+      <DependentUpon>CampingModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\mobil_home.cs">
+      <DependentUpon>CampingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\option.cs">
+      <DependentUpon>CampingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sejour.cs">
+      <DependentUpon>CampingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tarif.cs">
+      <DependentUpon>CampingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\type_sejour.cs">
+      <DependentUpon>CampingModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -214,12 +252,29 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\CampingModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CampingModel.edmx</DependentUpon>
+      <LastGenOutput>CampingModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CampingModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CampingModel.edmx</DependentUpon>
+      <LastGenOutput>CampingModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\CampingModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CampingModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CampingModel.edmx.diagram">
+      <DependentUpon>CampingModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -278,6 +333,9 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

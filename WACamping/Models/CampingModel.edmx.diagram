@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1c360a9c0aa647e990f2b14baffef282" Name="Diagram1">
+        <EntityTypeShape EntityType="LOCAMERModel.Client" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LOCAMERModel.location" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LOCAMERModel.mobil_home" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LOCAMERModel.option" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LOCAMERModel.sejour" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LOCAMERModel.tarif" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LOCAMERModel.type_sejour" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <AssociationConnector Association="LOCAMERModel.FK_sejour_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="LOCAMERModel.FK_location_options" ManuallyRouted="false" />
+        <AssociationConnector Association="LOCAMERModel.FK_location_sejour" ManuallyRouted="false" />
+        <AssociationConnector Association="LOCAMERModel.FK_mobil_home_tarif" ManuallyRouted="false" />
+        <AssociationConnector Association="LOCAMERModel.FK_sejour_mobil_home" ManuallyRouted="false" />
+        <AssociationConnector Association="LOCAMERModel.FK_sejour_type_sejour1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
