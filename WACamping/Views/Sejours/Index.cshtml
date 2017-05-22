@@ -29,6 +29,9 @@
         <th>
             @Html.DisplayNameFor(model => model.type_sejour.libelle)
         </th>
+        <th>
+            Nombre d'objet loué
+        </th>
         <th></th>
     </tr>
 
@@ -51,6 +54,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.type_sejour.libelle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.locations.Count)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id_sejour }) |
